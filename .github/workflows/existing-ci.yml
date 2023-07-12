@@ -37,6 +37,11 @@ jobs:
         run: |
           python -m pip install pytest pytest-lazy-fixture
           python -m pip install ".[dev,test]"
-      
+
+      - name: Download test files
+        run: |
+          python -m pip install fasthep
+          fasthep download --json tests/data/remote_data.json --destination tests/data/
+
       - name: Test with pytest
         run: python -m pytest

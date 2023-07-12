@@ -43,7 +43,9 @@ A tool from the [FAST-HEP](http://fast-hep.web.cern.ch/) collaboration.
 
 Visit the `documentation <https://fasthep-carpenter.readthedocs.io/>`_ for full details.
 
-## Developer docs
+## Developing this package
+
+This package is compatible with Python >= 3.10
 
 Install the package and dependencies
 
@@ -65,9 +67,10 @@ Install test dependencies
 pip install .[test]
 ```
 
-Download test files
+Download test files via the FAST-HEP CLI
 
 ```bash
+pip install "fasthep[dev]"
 fasthep download --json tests/data/remote_data.json --destination tests/data/
 ```
 
