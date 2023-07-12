@@ -42,7 +42,7 @@ dependencies = [
   "asyncio",
   "awkward==2.3.1",
   "coffea<0.9.0",
-  "dask",
+  "dask[distributed]",
   "fast-flow>0.5.0",
   "fast-curator",
   "fasthep-logging",
